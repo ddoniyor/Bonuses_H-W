@@ -13,9 +13,9 @@ func sumOfBonuses(sales []int) int {
 	const percent = 5
 	var total int
 
-	for i := 0; i < len(sales); i++ {
-		if sales[i] > lineOfBound {
-			cash := sales[i] - lineOfBound
+	for _, value := range sales {
+		if value > lineOfBound {
+			cash := value - lineOfBound
 			bonusCash := cash * percent / 100
 			total += bonusCash
 		}

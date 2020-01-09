@@ -9,9 +9,9 @@ func main() {
 
 func sumOfBonuses(sales []int) int {
 
-	var total int
 	const lineOfBound = 10_000
 	const percent = 5
+	var total int
 
 	for i := 0; i < len(sales); i++ {
 		if sales[i] > lineOfBound {
